@@ -5,6 +5,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -20,6 +21,7 @@ public class BaseTest
 	public static Properties p;
 	public static Properties parentProp;
 	public static Properties childProp;
+	public static Properties orProp;
 	
 	
 	public static void init() throws Exception
@@ -39,6 +41,10 @@ public class BaseTest
 		childProp.load(fis);
 		String value = childProp.getProperty("amazonurl");
 		System.out.println(value);
+		
+		fis = new FileInputStream(projectPath+"/or.properties");
+		orProp = new Properties();
+		orProp.load(fis);
 	}
 	
 	public static void launch(String browser)
@@ -72,18 +78,49 @@ public class BaseTest
 		driver.navigate().to(childProp.getProperty(url));
 	}
 	
-	public static void clickElement(String locator) 
+	public static void clickElement(String locatorKey) 
 	{
-		driver.findElement(By.xpath(locator)).click();
+		getElement(locatorKey).click();;
+		//driver.findElement(By.xpath(orProp.getProperty(locatorKey))).click();
 	}
 
-	public static void type(String locator, String text) 
+	
+
+	public static void type(String locatorKey, String text) 
 	{
-		driver.findElement(By.name(locator)).sendKeys(text);
+		getElement(locatorKey).sendKeys(text);
+		//driver.findElement(By.name(orProp.getProperty(locatorKey))).sendKeys(text);
 	}
 
-	public static void selectOption(String locator, String item) 
+	public static void selectOption(String locatorKey, String item) 
 	{
-		driver.findElement(By.name(locator)).sendKeys(item);
+		getElement(locatorKey).sendKeys(item);
+		//driver.findElement(By.id(orProp.getProperty(locatorKey))).sendKeys(item);
+	}
+	
+	
+	public static WebElement getElement(String locatorKey) 
+	{
+		WebElement element=null;
+		
+		if(locatorKey.endsWith("_id")) {
+			element = driver.findElement(By.id(orProp.getProperty(locatorKey)));
+		}else if(locatorKey.endsWith("_name")) {
+			element = driver.findElement(By.name(orProp.getProperty(locatorKey)));
+		}else if(locatorKey.endsWith("_classname")) {
+			element = driver.findElement(By.className(orProp.getProperty(locatorKey)));
+		}else if(locatorKey.endsWith("_xpath")) {
+			element = driver.findElement(By.xpath(orProp.getProperty(locatorKey)));
+		}else if(locatorKey.endsWith("_cssSelector")) {
+			element = driver.findElement(By.cssSelector(orProp.getProperty(locatorKey)));
+		}else if(locatorKey.endsWith("_linkText")) {
+			element = driver.findElement(By.linkText(orProp.getProperty(locatorKey)));
+		}else if(locatorKey.endsWith("_partiallinkText")) {
+			element = driver.findElement(By.partialLinkText(orProp.getProperty(locatorKey)));
+		}
+		
+		
+		return element;
+		
 	}
 }

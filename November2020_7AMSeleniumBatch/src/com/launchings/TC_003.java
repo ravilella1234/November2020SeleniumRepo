@@ -11,11 +11,11 @@ public class TC_003 extends BaseTest
 		
 		navigateUrl("amazonurl");
 		
-		selectOption("url","Books");
+		selectOption("amazondropdown_id","Books");
 		
-		type("field-keywords","Harry Potter");
+		type("amazonsearchtext_name","Harry Potter");
 	
-		clickElement("//header/div[@id='navbar']/div[@id='nav-belt']/div[2]/div[1]/form[1]/div[3]/div[1]/span[1]/input[1]");
+		clickElement("amazonsearchbutton_xpath");
 		
 		//WebElement loc = driver.findElement(By.id("searchDropdownBox"));
 		//loc.sendKeys("Books");
