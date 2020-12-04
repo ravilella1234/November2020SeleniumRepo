@@ -1,21 +1,37 @@
 package com.launchings;
 
+import org.apache.log4j.Logger;
+
 public class TC_003 extends BaseTest
 {
 
+	private static final Logger log = Logger.getLogger(TC_003.class);
+	
 	public static void main(String[] args) throws Exception 
 	{
+		
+		
 		init();
+		log.info("----------------   Started TC_003 ------------------------");
+		log.info("initialising the dependency files...... ");
 		
 		launch("chromebrowser");
+		log.info("Opening the browser :-" + p.getProperty("chromebrowser") );
 		
 		navigateUrl("amazonurl");
+		log.info("Navigated to :- " + childProp.getProperty("amazonurl") );
 		
 		selectOption("amazondropdown_id","Books");
+		log.info("Selected the option books by using the locator :- "+ orProp.getProperty("amazondropdown_id") );
 		
 		type("amazonsearchtext_name","Harry Potter");
+		log.info("Entered the test Harry Potter by using locator :- " + orProp.getProperty("amazonsearchtext_name"));
 	
 		clickElement("amazonsearchbutton_xpath");
+		log.info("Clicked on search button by using locator :- " + orProp.getProperty("amazonsearchbutton_xpath"));
+		
+		
+		log.info("----------------   Ended TC_003 ------------------------");
 		
 		//WebElement loc = driver.findElement(By.id("searchDropdownBox"));
 		//loc.sendKeys("Books");
