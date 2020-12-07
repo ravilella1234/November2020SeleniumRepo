@@ -1,6 +1,6 @@
-[1607049175.454][INFO]: Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 33685
-[1607049175.454][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-[1607049176.553][INFO]: [b48eb0be50e9808b03e1c58d4895e312] COMMAND InitSession {
+[1607307723.553][INFO]: Starting ChromeDriver 86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378}) on port 46465
+[1607307723.553][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1607307724.733][INFO]: [5cd5c3d19068d7eba13b251bd7da2355] COMMAND InitSession {
    "capabilities": {
       "firstMatch": [ {
          "browserName": "chrome",
@@ -18,9 +18,9 @@
       }
    }
 }
-[1607049176.609][INFO]: Populating Preferences file: {
+[1607307724.743][INFO]: Populating Preferences file: {
    "account_id_migration_state": 2,
-   "account_tracker_service_last_update": "13251519601454521",
+   "account_tracker_service_last_update": "13251781256517542",
    "alternate_error_pages": {
       "backup": true
    },
@@ -37,7 +37,7 @@
       "window_placement": {
          "bottom": 746,
          "left": 547,
-         "maximized": true,
+         "maximized": false,
          "right": 1384,
          "top": 18,
          "work_area_bottom": 728,
@@ -48,8 +48,8 @@
    },
    "countryid_at_install": 18766,
    "data_reduction": {
-      "daily_original_length": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "105187", "203160", "148359", "0", "0", "0", "0", "0", "0", "193451" ],
-      "daily_received_length": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "105187", "203160", "148359", "0", "0", "0", "0", "0", "0", "193451" ],
+      "daily_original_length": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "105187", "203160", "148359", "0", "0", "0", "0", "0", "0", "236581" ],
+      "daily_received_length": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "105187", "203160", "148359", "0", "0", "0", "0", "0", "0", "236581" ],
       "last_update_date": "13251493800000000",
       "last_week_services_downstream_background_kb": {
 
@@ -75,13 +75,13 @@
 
       },
       "this_week_services_downstream_foreground_kb": {
-         "130931413": 6,
+         "130931413": 7,
          "35473769": 0,
-         "35565745": 4,
+         "35565745": 6,
          "54845618": 9,
          "67052219": 0,
          "727528": 0,
-         "78917933": 164,
+         "78917933": 246,
          "88863520": 0
       },
       "this_week_user_traffic_contenttype_downstream_kb": {
@@ -90,7 +90,7 @@
    },
    "default_apps_install_state": 3,
    "domain_diversity": {
-      "last_reporting_timestamp": "13251519611572743"
+      "last_reporting_timestamp": "13251781269621688"
    },
    "download": {
       "directory_upgrade": true
@@ -129,11 +129,11 @@
    },
    "google": {
       "services": {
-         "signin_scoped_device_id": "4ba27382-c31b-4790-8709-2487e2611d25"
+         "signin_scoped_device_id": "8b51899b-50c4-48c0-8d03-6efbc028e898"
       }
    },
-   "http_original_content_length": "650157",
-   "http_received_content_length": "650157",
+   "http_original_content_length": "693287",
+   "http_received_content_length": "693287",
    "invalidation": {
       "per_sender_topics_to_handler": {
          "1013309121859": {
@@ -145,7 +145,7 @@
       }
    },
    "language_model_counters": {
-      "en": 25
+      "en": 26
    },
    "media": {
       "device_id_salt": "9855FAEC309196B6584D3C0DE8B3B6DB",
@@ -209,11 +209,11 @@
             "client_hints": {
                "https://www.amazon.in:443,*": {
                   "expiration": "0",
-                  "last_modified": "13251522026752512",
+                  "last_modified": "13251781269774649",
                   "model": 1,
                   "setting": {
                      "client_hints": [ 6, 4, 5 ],
-                     "expiration_time": 88007048426.7525
+                     "expiration_time": 88007307669.77464
                   }
                }
             },
@@ -396,10 +396,10 @@
             "site_engagement": {
                "https://chrome.google.com:443,*": {
                   "expiration": "0",
-                  "last_modified": "13251519601631789",
+                  "last_modified": "13251781256741503",
                   "model": 0,
                   "setting": {
-                     "lastEngagementTime": 1.3251430121702812e+16,
+                     "lastEngagementTime": 1.3251660553872388e+16,
                      "lastShortcutLaunchTime": 0.0,
                      "pointsAddedToday": 2.1,
                      "rawScore": 2.1
@@ -407,21 +407,21 @@
                },
                "https://www.amazon.in:443,*": {
                   "expiration": "0",
-                  "last_modified": "13251522024570658",
+                  "last_modified": "13251781260050518",
                   "model": 0,
                   "setting": {
-                     "lastEngagementTime": 1.3251522024570624e+16,
+                     "lastEngagementTime": 1.3251781260050462e+16,
                      "lastShortcutLaunchTime": 0.0,
-                     "pointsAddedToday": 9.899999999999999,
-                     "rawScore": 27.566580243131316
+                     "pointsAddedToday": 3.0,
+                     "rawScore": 28.84421153057706
                   }
                },
                "https://www.flipkart.com:443,*": {
                   "expiration": "0",
-                  "last_modified": "13251519601631663",
+                  "last_modified": "13251781256741162",
                   "model": 0,
                   "setting": {
-                     "lastEngagementTime": 1.325143030653364e+16,
+                     "lastEngagementTime": 1.3251660738703216e+16,
                      "lastShortcutLaunchTime": 0.0,
                      "pointsAddedToday": 3.6,
                      "rawScore": 3.6
@@ -429,10 +429,10 @@
                },
                "https://www.google.com:443,*": {
                   "expiration": "0",
-                  "last_modified": "13251519601631855",
+                  "last_modified": "13251781256741875",
                   "model": 0,
                   "setting": {
-                     "lastEngagementTime": 1.3251430103030148e+16,
+                     "lastEngagementTime": 1.3251660535199724e+16,
                      "lastShortcutLaunchTime": 0.0,
                      "pointsAddedToday": 3.6,
                      "rawScore": 3.6
@@ -440,10 +440,10 @@
                },
                "https://www.icicibank.com:443,*": {
                   "expiration": "0",
-                  "last_modified": "13251519601631918",
+                  "last_modified": "13251781256742273",
                   "model": 0,
                   "setting": {
-                     "lastEngagementTime": 1.325143085004164e+16,
+                     "lastEngagementTime": 1.3251661282211216e+16,
                      "lastShortcutLaunchTime": 0.0,
                      "pointsAddedToday": 5.1,
                      "rawScore": 5.1
@@ -482,10 +482,10 @@
       },
       "created_by_version": "87.0.4280.66",
       "creation_time": "13250743914427709",
-      "exit_type": "Normal",
+      "exit_type": "Crashed",
       "exited_cleanly": true,
       "icon_version": 6,
-      "last_engagement_time": "13251522024570623",
+      "last_engagement_time": "13251781260050462",
       "last_time_obsolete_http_credentials_removed": 1606270374.965,
       "managed_user_id": "",
       "name": "NovemberChromeProfile",
@@ -519,7 +519,7 @@
       "user_display_mode_cleaned_up": true
    }
 }
-[1607049176.643][INFO]: Populating Local State file: {
+[1607307724.795][INFO]: Populating Local State file: {
    "background_mode": {
       "enabled": false
    },
@@ -562,12 +562,12 @@
       "os_password_last_changed": "13251522019927709"
    },
    "policy": {
-      "last_statistics_update": "13251519600558478"
+      "last_statistics_update": "13251781255980599"
    },
    "profile": {
       "info_cache": {
          "Default": {
-            "active_time": 1607046001.410596,
+            "active_time": 1607307656.473325,
             "avatar_icon": "chrome://theme/IDR_PROFILE_AVATAR_51",
             "background_apps": false,
             "gaia_given_name": "",
@@ -586,24 +586,24 @@
             "user_name": ""
          }
       },
-      "last_active_profiles": [  ],
+      "last_active_profiles": [ "Default" ],
       "metrics": {
          "next_bucket_index": 2
       },
-      "profile_counts_reported": "13251519600565390"
+      "profile_counts_reported": "13251781255987456"
    },
    "profile_network_context_service": {
       "http_cache_finch_experiment_groups": "None None None"
    },
    "rappor": {
       "cohort_seed": 121,
-      "last_daily_sample": "13251519615573187",
+      "last_daily_sample": "13251781270981592",
       "secret": "lVA6SwrijsHiKkylBFkfnp5R0PM8y31qm7iGDkA13bSVOVv45wT6wddBN9E4QOKP"
    },
    "shutdown": {
-      "num_processes": 4,
-      "num_processes_slow": 1,
-      "type": 1
+      "num_processes": 0,
+      "num_processes_slow": 0,
+      "type": 0
    },
    "ssl": {
       "rev_checking": {
@@ -618,7 +618,7 @@
       }
    },
    "tab_stats": {
-      "last_daily_sample": "13251519601422741",
+      "last_daily_sample": "13251781256489886",
       "max_tabs_per_window": 1,
       "total_tab_count_max": 1,
       "window_count_max": 1
@@ -628,8 +628,8 @@
    },
    "uninstall_metrics": {
       "installation_date2": "1574898982",
-      "launch_count": "13",
-      "page_load_count": "66",
+      "launch_count": "16",
+      "page_load_count": "73",
       "uptime_sec": "2494"
    },
    "updateclientdata": {
@@ -785,10 +785,25 @@
    "user_experience_metrics": {
       "client_id2": "73c9e22d-b2ef-4602-a610-a24c2b84ca64",
       "client_id_timestamp": "1574836563",
-      "initial_logs2": [  ],
+      "initial_logs2": [ {
+         "data": "H4sIAAAAAAAAAKWSXWgcVRTH7xlnN7OT3WS8aXRZHTtGxG11LzOzs7OzWz+Szbabig2xX4pi4+zmbma2k5lh81V9kGkfRArC0gcRQUsfrBSUgk9+vJRFkIgIfrRCngp9ayH0QaFgapyd1mgEW8EL537+zvnfc89NnPeOH1xdXTslJDMfJ7hfv/72ZgwPGkUiE001ZKLrOV1LXz5zYy02EqNu7tCBnWmef8F2Z7zleWnyIOYVOWSVkqwp6nng48cMfVrXhA+fTgfB+oUvN7aPoCzIl3gjiFemuTePM8I7amZALRI19JJlYuiGovbXPG/WodJet0HKpbHJ2nO7pexed4E62f07pImqVGubvmU35qWCKktVu00bC/mqokhL89OFaVnyo2HHvsc+X6kcupZZqVCEgmda9/HJGnUXbZdGsYQrbwtpVkIngOHgZK8rF/jBA5bXOLpsLlFpj2POWxj71G/2Zr5jvkbbZMZxMnxeJb00tUJeCtMp7+LvHbfa3hyVpqp7pMM2XaZtLM1ZrWZ9bma20WzV675JvZbX9CyPNmdtarVMO4NCZ1R+nE9Nmgt2KDju2NRdwNvs8HZt13Ryrtlwcr6zOGu7EQxlskVpKjrCQ5sO/kwztxTJ3+Ir6Fk+NfdI+cjwBx8NjU2xL+3mQLj4ydnfY+mV02E/cj+fUEie5HWSV4VoKx3daueDfPKvqhvG5tlD2SDg6uz4RKXaSnJIYMK9mBEfjQdwfeO3tVgHBjpAOvByBz6FDvwU2mpop9gOnA2tB7wf78Avfe8CfAHJYZtdfONRFLYs6sIg14/jJaIYRBa/G3v9yS7wHIehKF448vzNLghcEvfJ0cvLYs+nCymOx6yuFosiaj7sd2GYi+OkTApFomlE1Uqq+NTKUa8L/RyDGS0v/vzD9xu9QPfgPiUKVBB3nVuvd2GIY/HfyipeYa9e7MI2LoX7tfBjEkUvljZVee4BDIo4fO5k7RvYzsUESDO9V5ORAaMwgabQi/AqstAxFADqEawQS8NtAo2iiEBbiP8S4/8Td1eBfyGYfxCwhUBbiLtnCyHB3JG4cy434L1ywGz82eAtBtTBxLUTVu4zPLAuQIYRGDWVOLzvqx8vi688ES7hD93e7xzaBAAA",
+         "hash": "nN6JHA76EqvpCbXMZ2z1yy15lPA=",
+         "signature": "huqeuqbcGcNH3DVkJEeU6wbDiSpHrk5Spo43rAYQ11M=",
+         "timestamp": "1607049177"
+      }, {
+         "data": "H4sIAAAAAAAAAONcn98YcuvWu0kCvFI9TBxfj5/5yyrEb2GuZ6BnYmRhoGdmpmtmIvFg4Y93rEqsqXm6ocFaElxc4Zl5KfnlxQp+IUJchgZAtYaWBiaGRmFcbBUWZvFmJgJL7SQaGv4c2P1fXolBg9HgGpdFA5sTFweDAIMUgxGDFYOv+s6TTqGvpU46pTIwNNhniXHxuKfmlWbmpXrmlaTmCDzuFZBgUWBoYmToYmRw4hJgqmBcwch4gZHZi4s3V9kqTnTecmHHAJYoJg6GJBZnDyeXLB6Q4RIMCmwWDA4MDYwf/v9+xzqDkeEH4yyrBqb/MMDYwcQ4iUnF3DjZMtXIKEU3ySg1TdfEzMBIN9HM0EA30cgk2SjJwiQ50czEiJ/zdVOG7g4hvj8CjFJMAkxGvJxhvkcuP5CN1QFyGQFSGqQNOgEAAA==",
+         "hash": "tOqnz0d2nEO7xX22w1kSZWmt+Oo=",
+         "signature": "25mp/ceGUcsnxrn8yd5N8kIx3TcG4naLYUfoFP8ks/s=",
+         "timestamp": "1607307655"
+      }, {
+         "data": "H4sIAAAAAAAAAONcn98YcuvWu0kCfFKTmDi+Hj/zl1WI38Jcz0DPxMjCQM/MTNfMROLBwh/vWJVYU/N0Q4O1JLi4wjPzUvLLixX8QoS4DA2Aag0tDUwMjcK42CoszOLNTASW2kk0NPw5sPu/vBKDBqPBNS6LBjYnLg4GAQYpBiMGKwZf9Z0nnUJfS510SmVgaLDPEuPicU/NK83MS/XMK0nNEXjcKyDBosDQxMjQxcjgJCDAWsHYwMi4gpHxAiP7DUZGLy7eXGWrONF5y4UdA1iimDgYklicPZxcsnhAVkgwKLBZMDgwNDB++P/7HesMRoYfjLOsGpj+wwBjBxPjJCYVc+Nky1QjoxTdJKPUNF0TMwMj3UQzQwPdRCOTZKMkC5PkRDMTI37OQy4vuT747WYWEJBiEhAEAE84JpExAQAA",
+         "hash": "BaxXAh+dhtwcRCsbx5AdHTtlYxk=",
+         "signature": "BFej6e7xno5Pb/vjQNkCEXxpPLTS4sVhV67KXwcFFzM=",
+         "timestamp": "1607307699"
+      } ],
       "last_seen": {
          "BrowserMetrics": "13251521812250304",
-         "CrashpadMetrics": "13251521725848674",
+         "CrashpadMetrics": "13251522777183596",
          "SetupMetrics": "13251450172164725"
       },
       "low_entropy_source3": 7450,
@@ -799,11 +814,11 @@
          "signature": "pBqsZbsXGntWh7mvxrNBN8L0l0nX/UcXU00n6KKDll0=",
          "timestamp": "1607048999"
       } ],
-      "session_id": 12,
+      "session_id": 15,
       "stability": {
          "breakpad_registration_fail": 0,
          "breakpad_registration_ok": 0,
-         "browser_last_live_timestamp": "13251522599841311",
+         "browser_last_live_timestamp": "13251781299835695",
          "child_process_crash_count": 0,
          "crash_count": 0,
          "debugger_not_present": 0,
@@ -816,14 +831,14 @@
          "extension_renderer_launch_count": 0,
          "gpu_crash_count": 0,
          "incomplete_session_end_count": 0,
-         "launch_count": 0,
+         "launch_count": 1,
          "page_load_count": 0,
          "renderer_crash_count": 0,
          "renderer_failed_launch_count": 0,
          "renderer_hang_count": 0,
          "renderer_launch_count": 0,
-         "saved_system_profile": "CPXHzP0FEg84Ny4wLjQyODAuNjYtNjQY4KH47gUiBWVuLVVTKhgKCldpbmRvd3MgTlQSCjEwLjAuMTkwNDEyrwEKBng4Nl82NBClPhiAgPzAu/8fIgAoATDWCjiABkJfCIaBAhCWMhoOMjcuMjAuMTAwLjg2ODEyC0dvb2dsZSBJbmMuOjlBTkdMRSAoSW50ZWwoUikgSEQgR3JhcGhpY3MgNTIwIERpcmVjdDNEMTEgdnNfNV8wIHBzXzVfMClNJ7nJQlXrGslCZQAAgD9qFgoMR2VudWluZUludGVsEOONEBgEIACCAQIIAYoBAggBOjUKD1Nob2Nrd2F2ZSBGbGFzaBIScGVwZmxhc2hwbGF5ZXIuZGxsGgozMi4wLjAuNDUzIAAoATo7ChFDaHJvbWUgUERGIFZpZXdlchIgbWhqZmJtZGdjZmpiYnBhZW9qb2ZvaG9lZmdpZWhqYWkaACAAKAA6KwoNTmF0aXZlIENsaWVudBIUaW50ZXJuYWwtbmFjbC1wbHVnaW4aACAAKAE6LgoRQ2hyb21lIFBERiBQbHVnaW4SE2ludGVybmFsLXBkZi12aWV3ZXIaACAAKAFKCg1tIzpeFZ6nE0FQBFpFCAEQ1a2m/gUYyZ+m/gUiFwoJMS4zLjM2LjMyEMmfpv4FGAAgACgAKhwKDDg3LjAuNDI4MC44OBDJn6b+BRgAIB4ogIAIYgRDSEJEagwIABACGAAgBTgGQAaAAfD/++4FkAEOkAEukAFbkAGyAZAB1AGQAdoBkAGSBJABpgSQAe4FkAGdBpAB9AeYAQG6AQwVaQR1fiUAAAAAKADCAQ8ICxIGOS4xOC4wHc5BejzCAQoICBIBNx3AXlH9wgEQCAwSBzAuMC4wLjAdAAAAAMIBDQgKEgQ2Mjc3HQBmIXDCARUIBhIMMC41Ny40NC4yNDkyHT3Ja2/CAQsIAhICNDMd19LR/8IBEAgDEgcxLjAuMC41HTup/GLCARMIBBIKMzIuMC4wLjQ1Mx3jBOrVwgEUCA0SCzQuMTAuMTY3OS4wHQAAAADCAQoIGxIBMR0VqYpHygEfCAUQARgCIAAoADAAOAFAAUgAUABYAWAAaAB4AIABAMoBHwgEEAUYASAAKAAwADgAQABIAFAAWABgAGgAeACAAQDKAR8IBRABGAIgACgAMAA4AUABSABQAFgBYABoAHgAgAEAygEfCAQQARgCIAAoADAAOAFAAUgAUABYAWAAaAB4AIABAMoBHwgEEAEYAiAAKAAwADgBQAFIAFAAWAFgAGgAeACAAQDKAR8IBRABGAIgACgAMAA4AUABSABQAFgBYABoAHgAgAEAygEfCAEQARgCIAAoADAAOAFAAUgAUABYAWAAaAJ4AIABAMoBHwgBEAEYAiABKAAwADgBQAFIAFAAWABgAGgCeACAAQDKAR8IBBAFGAEgACgAMAA4AEAASABQAFgAYABoAHgAgAEAygEfCAEQBRgCIAAoADAAOABAAEgAUABYAGAAaAB4AIABAMoBHwgEEAEYAiAAKAAwADgBQAFIAFAAWAFgAGgAeACAAQD4AZo6gAL///////////8BiAIB",
-         "saved_system_profile_hash": "01D6C374DDA2C75BF12AD8DDD514B623C0C5C623",
+         "saved_system_profile": "CPXHzP0FEg84Ny4wLjQyODAuNjYtNjQY4KH47gUiBWVuLVVTKhgKCldpbmRvd3MgTlQSCjEwLjAuMTkwNDEyVgoGeDg2XzY0EKU+GICA/MC7/x8iACgBMNYKOIAGQgoIABAAGgAyADoATSe5yUJV6xrJQmUAAIA/ahYKDEdlbnVpbmVJbnRlbBDjjRAYBCAAggEAigEASgoNbSM6XhWepxNBUARaAggAYgRDSEJEagwIABAAGAAgBjgAQACAAfD/++4FmAEA+AGaOoAC////////////AYgCAZICJDczYzllMjJkLWIyZWYtNDYwMi1hNjEwLWEyNGMyYjg0Y2E2NA==",
+         "saved_system_profile_hash": "EE66CD69D5091B7E60B5146BC3EEE12E15F76E9E",
          "session_end_completed": true,
          "stats_buildtime": "1605575669",
          "stats_version": "87.0.4280.66-64",
@@ -832,52 +847,24 @@
       },
       "unsent_log_metadata": {
          "initial_logs": {
-            "sent_samples_count": 2,
-            "unsent_persisted_size_in_kb": 0,
-            "unsent_samples_count": 0
+            "sent_samples_count": 0,
+            "unsent_persisted_size_in_kb": 2,
+            "unsent_samples_count": 1
          },
          "ongoing_logs": {
-            "sent_samples_count": 191060,
+            "sent_samples_count": 0,
             "unsent_persisted_size_in_kb": 13,
-            "unsent_samples_count": 37782
+            "unsent_samples_count": 0
          }
       }
    },
+   "variations_crash_streak": 1,
    "was": {
       "restarted": false
    }
 }
-[1607049176.658][INFO]: Cannot switch to US keyboard layout - some keys may be interpreted incorrectly
-[1607049176.658][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-notifications --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --log-level=0 --no-first-run --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\DELL\AppData\Local\Google\Chrome\User Data\Profile 16"
-[1607049178.130][WARNING]: This version of ChromeDriver has not been tested with Chrome version 87.
-[1607049178.301][INFO]: resolved localhost to ["::1","127.0.0.1"]
-[1607049180.462][INFO]: [b48eb0be50e9808b03e1c58d4895e312] RESPONSE InitSession {
-   "capabilities": {
-      "acceptInsecureCerts": false,
-      "browserName": "chrome",
-      "browserVersion": "87.0.4280.66",
-      "chrome": {
-         "chromedriverVersion": "86.0.4240.22 (398b0743353ff36fb1b82468f63a3a93b4e2e89e-refs/branch-heads/4240@{#378})",
-         "userDataDir": "C:\\Users\\DELL\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 16"
-      },
-      "goog:chromeOptions": {
-         "debuggerAddress": "localhost:54382"
-      },
-      "networkConnectionEnabled": false,
-      "pageLoadStrategy": "normal",
-      "platformName": "windows",
-      "proxy": {
-
-      },
-      "setWindowRect": true,
-      "strictFileInteractability": false,
-      "timeouts": {
-         "implicit": 0,
-         "pageLoad": 300000,
-         "script": 30000
-      },
-      "unhandledPromptBehavior": "dismiss and notify",
-      "webauthn:virtualAuthenticators": true
-   },
-   "sessionId": "b48eb0be50e9808b03e1c58d4895e312"
-}
+[1607307724.809][INFO]: Cannot switch to US keyboard layout - some keys may be interpreted incorrectly
+[1607307724.809][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-notifications --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --log-level=0 --no-first-run --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\DELL\AppData\Local\Google\Chrome\User Data\Profile 16"
+[1607307725.271][INFO]: [5cd5c3d19068d7eba13b251bd7da2355] RESPONSE InitSession ERROR unknown error: Chrome failed to start: crashed.
+  (unknown error: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.)

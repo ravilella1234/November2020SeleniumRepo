@@ -18,3 +18,9 @@ Clicked on search button by using locator :- //header/div[@id='navbar']/div[@id=
 ----------------   Started TC_003 ------------------------
 initialising the dependency files...... 
 Opening the browser :-chrome
+----------------   Started TC_003 ------------------------
+initialising the dependency files...... 
+Opening the browser :-chrome
+Navigated to :- https://www.amazon.in
+Selected the option books by using the locator :- searchDropdownBox
+Entered the test Harry Potter by using locator :- field-keywords
