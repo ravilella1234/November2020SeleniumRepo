@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import com.relevantcodes.extentreports.LogStatus;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.AfterMethod;
 
 public class TNG_002 extends BaseTest
@@ -12,7 +13,8 @@ public class TNG_002 extends BaseTest
 	
 
   @BeforeMethod
-  public void startProcess() throws Exception 
+  @Parameters("browser")
+  public void startProcess(String bType) throws Exception 
   {
 	  System.out.println("StartProcess");
 	  
@@ -21,8 +23,8 @@ public class TNG_002 extends BaseTest
 		test.log(LogStatus.INFO, "----------------   Started TNG_002 ------------------------");
 		test.log(LogStatus.INFO, "initialising the dependency files...... ");
 				
-		launch("firefoxbrowser");
-		test.log(LogStatus.PASS, "Opening the browser :-" + p.getProperty("chromebrowser"));
+		launch(bType);
+		test.log(LogStatus.PASS, "Opening the browser :-" + bType);
 				
 		navigateUrl("amazonurl");
 		test.log(LogStatus.INFO, "Navigated to :- " + childProp.getProperty("amazonurl"));

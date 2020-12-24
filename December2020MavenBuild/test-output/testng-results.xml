@@ -1,87 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="6" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="SampleSuite" duration-ms="26116" started-at="2020-12-23T02:21:51Z" finished-at="2020-12-23T02:22:17Z">
+  <suite name="BatchSuite" duration-ms="93812" started-at="2020-12-24T02:24:07Z" finished-at="2020-12-24T02:25:41Z">
     <groups>
     </groups>
-    <test name="SampleTest" duration-ms="26116" started-at="2020-12-23T02:21:51Z" finished-at="2020-12-23T02:22:17Z">
-      <class name="com.project.December2020MavenBuild.NewTest">
-        <test-method status="PASS" signature="f()[pri:0, instance:com.project.December2020MavenBuild.NewTest@f2f2cc1]" name="f" duration-ms="11" started-at="2020-12-23T02:21:51Z" finished-at="2020-12-23T02:21:51Z">
+    <test name="BatchTest" duration-ms="93812" started-at="2020-12-24T02:24:07Z" finished-at="2020-12-24T02:25:41Z">
+      <class name="com.project.December2020MavenBuild.CheckBox1">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.project.December2020MavenBuild.CheckBox1@6295d394]" name="beforeMethod" is-config="true" duration-ms="17544" started-at="2020-12-24T02:24:38Z" finished-at="2020-12-24T02:24:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- com.project.December2020MavenBuild.NewTest -->
-      <class name="com.project.December2020MavenBuild.NewTest1">
-        <test-method status="PASS" signature="f()[pri:0, instance:com.project.December2020MavenBuild.NewTest1@3b2cf7ab]" name="f" duration-ms="3" started-at="2020-12-23T02:22:17Z" finished-at="2020-12-23T02:22:17Z">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="checkboxTest()[pri:0, instance:com.project.December2020MavenBuild.CheckBox1@6295d394]" name="checkboxTest" duration-ms="1246" started-at="2020-12-24T02:24:56Z" finished-at="2020-12-24T02:24:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- com.project.December2020MavenBuild.NewTest1 -->
+        </test-method> <!-- checkboxTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.December2020MavenBuild.CheckBox1@6295d394]" name="afterMethod" is-config="true" duration-ms="3526" started-at="2020-12-24T02:24:57Z" finished-at="2020-12-24T02:25:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.project.December2020MavenBuild.CheckBox1 -->
       <class name="com.project.December2020MavenBuild.TNG_002">
-        <test-method status="PASS" signature="startProcess()[pri:0, instance:com.project.December2020MavenBuild.TNG_002@3a079870]" name="startProcess" is-config="true" duration-ms="16555" started-at="2020-12-23T02:21:51Z" finished-at="2020-12-23T02:22:08Z">
+        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:com.project.December2020MavenBuild.TNG_002@475e586c]" name="startProcess" is-config="true" duration-ms="16370" started-at="2020-12-24T02:25:01Z" finished-at="2020-12-24T02:25:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startProcess -->
-        <test-method status="PASS" signature="amazon()[pri:0, instance:com.project.December2020MavenBuild.TNG_002@3a079870]" name="amazon" duration-ms="3687" started-at="2020-12-23T02:22:08Z" finished-at="2020-12-23T02:22:11Z">
+        <test-method status="PASS" signature="amazon()[pri:0, instance:com.project.December2020MavenBuild.TNG_002@475e586c]" name="amazon" duration-ms="20063" started-at="2020-12-24T02:25:17Z" finished-at="2020-12-24T02:25:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amazon -->
-        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.project.December2020MavenBuild.TNG_002@3a079870]" name="endProcess" is-config="true" duration-ms="5646" started-at="2020-12-23T02:22:11Z" finished-at="2020-12-23T02:22:17Z">
+        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.project.December2020MavenBuild.TNG_002@475e586c]" name="endProcess" is-config="true" duration-ms="3600" started-at="2020-12-24T02:25:37Z" finished-at="2020-12-24T02:25:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endProcess -->
       </class> <!-- com.project.December2020MavenBuild.TNG_002 -->
-      <class name="com.project.December2020MavenBuild.TNG_001">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:com.project.December2020MavenBuild.TNG_001@436a4e4b]" name="beforeSuite" is-config="true" duration-ms="27" started-at="2020-12-23T02:21:51Z" finished-at="2020-12-23T02:21:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.project.December2020MavenBuild.TNG_001@436a4e4b]" name="beforeTest" is-config="true" duration-ms="1" started-at="2020-12-23T02:21:51Z" finished-at="2020-12-23T02:21:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.project.December2020MavenBuild.TNG_001@436a4e4b]" name="beforeClass" is-config="true" duration-ms="4" started-at="2020-12-23T02:22:17Z" finished-at="2020-12-23T02:22:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.project.December2020MavenBuild.TNG_001@436a4e4b]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-12-23T02:22:17Z" finished-at="2020-12-23T02:22:17Z">
+      <class name="com.project.December2020MavenBuild.RadioButton1">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.project.December2020MavenBuild.RadioButton1@143640d5]" name="beforeMethod" is-config="true" duration-ms="21149" started-at="2020-12-24T02:24:07Z" finished-at="2020-12-24T02:24:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="f()[pri:1, instance:com.project.December2020MavenBuild.TNG_001@436a4e4b]" name="f" duration-ms="12" started-at="2020-12-23T02:22:17Z" finished-at="2020-12-23T02:22:17Z">
+        <test-method status="PASS" signature="radioButtonTest()[pri:0, instance:com.project.December2020MavenBuild.RadioButton1@143640d5]" name="radioButtonTest" duration-ms="481" started-at="2020-12-24T02:24:28Z" finished-at="2020-12-24T02:24:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.December2020MavenBuild.TNG_001@436a4e4b]" name="afterMethod" is-config="true" duration-ms="3" started-at="2020-12-23T02:22:17Z" finished-at="2020-12-23T02:22:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="z()[pri:2, instance:com.project.December2020MavenBuild.TNG_001@436a4e4b]" name="z" duration-ms="3" started-at="2020-12-23T02:22:17Z" finished-at="2020-12-23T02:22:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- z -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.project.December2020MavenBuild.TNG_001@436a4e4b]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-12-23T02:22:17Z" finished-at="2020-12-23T02:22:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.December2020MavenBuild.TNG_001@436a4e4b]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-12-23T02:22:17Z" finished-at="2020-12-23T02:22:17Z">
+        </test-method> <!-- radioButtonTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.December2020MavenBuild.RadioButton1@143640d5]" name="afterMethod" is-config="true" duration-ms="9730" started-at="2020-12-24T02:24:29Z" finished-at="2020-12-24T02:24:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.project.December2020MavenBuild.TNG_001@436a4e4b]" name="afterClass" is-config="true" duration-ms="1" started-at="2020-12-23T02:22:17Z" finished-at="2020-12-23T02:22:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.project.December2020MavenBuild.TNG_001@436a4e4b]" name="afterTest" is-config="true" duration-ms="1" started-at="2020-12-23T02:22:17Z" finished-at="2020-12-23T02:22:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:com.project.December2020MavenBuild.TNG_001@436a4e4b]" name="afterSuite" is-config="true" duration-ms="1" started-at="2020-12-23T02:22:17Z" finished-at="2020-12-23T02:22:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- com.project.December2020MavenBuild.TNG_001 -->
-    </test> <!-- SampleTest -->
-  </suite> <!-- SampleSuite -->
+      </class> <!-- com.project.December2020MavenBuild.RadioButton1 -->
+    </test> <!-- BatchTest -->
+  </suite> <!-- BatchSuite -->
 </testng-results>
