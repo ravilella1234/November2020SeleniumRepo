@@ -1,74 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="2" failed="0" ignored="0" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="BatchSuite" duration-ms="93812" started-at="2020-12-24T02:24:07Z" finished-at="2020-12-24T02:25:41Z">
+  <suite name="Default suite" duration-ms="139" started-at="2020-12-25T02:18:38Z" finished-at="2020-12-25T02:18:38Z">
     <groups>
     </groups>
-    <test name="BatchTest" duration-ms="93812" started-at="2020-12-24T02:24:07Z" finished-at="2020-12-24T02:25:41Z">
-      <class name="com.project.December2020MavenBuild.CheckBox1">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.project.December2020MavenBuild.CheckBox1@6295d394]" name="beforeMethod" is-config="true" duration-ms="17544" started-at="2020-12-24T02:24:38Z" finished-at="2020-12-24T02:24:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="139" started-at="2020-12-25T02:18:38Z" finished-at="2020-12-25T02:18:38Z">
+      <class name="com.project.December2020MavenBuild.TestDependencies">
+        <test-method status="PASS" signature="orange()[pri:1, instance:com.project.December2020MavenBuild.TestDependencies@5ef60048]" name="orange" duration-ms="18" started-at="2020-12-25T02:18:38Z" finished-at="2020-12-25T02:18:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="checkboxTest()[pri:0, instance:com.project.December2020MavenBuild.CheckBox1@6295d394]" name="checkboxTest" duration-ms="1246" started-at="2020-12-24T02:24:56Z" finished-at="2020-12-24T02:24:57Z">
+        </test-method> <!-- orange -->
+        <test-method status="PASS" signature="white()[pri:2, instance:com.project.December2020MavenBuild.TestDependencies@5ef60048]" name="white" duration-ms="3" started-at="2020-12-25T02:18:38Z" depends-on-methods="com.project.December2020MavenBuild.TestDependencies.orange" finished-at="2020-12-25T02:18:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkboxTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.December2020MavenBuild.CheckBox1@6295d394]" name="afterMethod" is-config="true" duration-ms="3526" started-at="2020-12-24T02:24:57Z" finished-at="2020-12-24T02:25:01Z">
+        </test-method> <!-- white -->
+        <test-method status="SKIP" signature="blue()[pri:3, instance:com.project.December2020MavenBuild.TestDependencies@5ef60048]" name="blue" duration-ms="7" started-at="2020-12-25T02:18:38Z" depends-on-methods="com.project.December2020MavenBuild.TestDependencies.white" finished-at="2020-12-25T02:18:38Z">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Blue test Skipped....]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Blue test Skipped....
+at com.project.December2020MavenBuild.TestDependencies.blue(TestDependencies.java:27)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.project.December2020MavenBuild.CheckBox1 -->
-      <class name="com.project.December2020MavenBuild.TNG_002">
-        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:com.project.December2020MavenBuild.TNG_002@475e586c]" name="startProcess" is-config="true" duration-ms="16370" started-at="2020-12-24T02:25:01Z" finished-at="2020-12-24T02:25:17Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- blue -->
+        <test-method status="SKIP" signature="green()[pri:4, instance:com.project.December2020MavenBuild.TestDependencies@5ef60048]" name="green" duration-ms="0" started-at="2020-12-25T02:18:38Z" depends-on-methods="com.project.December2020MavenBuild.TestDependencies.blue" finished-at="2020-12-25T02:18:38Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestDependencies.green()[pri:4, instance:com.project.December2020MavenBuild.TestDependencies@5ef60048] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestDependencies.green()[pri:4, instance:com.project.December2020MavenBuild.TestDependencies@5ef60048] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startProcess -->
-        <test-method status="PASS" signature="amazon()[pri:0, instance:com.project.December2020MavenBuild.TNG_002@475e586c]" name="amazon" duration-ms="20063" started-at="2020-12-24T02:25:17Z" finished-at="2020-12-24T02:25:37Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- amazon -->
-        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.project.December2020MavenBuild.TNG_002@475e586c]" name="endProcess" is-config="true" duration-ms="3600" started-at="2020-12-24T02:25:37Z" finished-at="2020-12-24T02:25:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endProcess -->
-      </class> <!-- com.project.December2020MavenBuild.TNG_002 -->
-      <class name="com.project.December2020MavenBuild.RadioButton1">
-        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:com.project.December2020MavenBuild.RadioButton1@143640d5]" name="beforeMethod" is-config="true" duration-ms="21149" started-at="2020-12-24T02:24:07Z" finished-at="2020-12-24T02:24:28Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="radioButtonTest()[pri:0, instance:com.project.December2020MavenBuild.RadioButton1@143640d5]" name="radioButtonTest" duration-ms="481" started-at="2020-12-24T02:24:28Z" finished-at="2020-12-24T02:24:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- radioButtonTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.project.December2020MavenBuild.RadioButton1@143640d5]" name="afterMethod" is-config="true" duration-ms="9730" started-at="2020-12-24T02:24:29Z" finished-at="2020-12-24T02:24:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.project.December2020MavenBuild.RadioButton1 -->
-    </test> <!-- BatchTest -->
-  </suite> <!-- BatchSuite -->
+        </test-method> <!-- green -->
+      </class> <!-- com.project.December2020MavenBuild.TestDependencies -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

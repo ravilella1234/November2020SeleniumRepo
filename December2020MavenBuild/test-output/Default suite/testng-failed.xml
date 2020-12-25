@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.project.December2020MavenBuild.LinksTesting1">
+      <class name="com.project.December2020MavenBuild.TestDependencies">
         <methods>
-          <include name="linktesting1"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
+          <include name="blue"/>
+          <include name="white"/>
+          <include name="green"/>
+          <include name="orange"/>
         </methods>
-      </class> <!-- com.project.December2020MavenBuild.LinksTesting1 -->
+      </class> <!-- com.project.December2020MavenBuild.TestDependencies -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
