@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="BatchSuite">
+<suite name="BatchSuite" >
   
   <groups>
   	<run>
@@ -9,6 +9,16 @@
   </groups>
  
   <test thread-count="5" name="BatchTest">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.project.December2020MavenBuild.RadioButton1"/>
+      <class name="com.project.December2020MavenBuild.CheckBox1"/>
+      <class name="com.project.December2020MavenBuild.TNG_002"/>
+    </classes>
+  </test> <!-- BatchTest -->
+  
+  
+   <test thread-count="5" name="BatchTest" >
   <parameter name="browser" value="chrome"></parameter>
     <classes>
       <class name="com.project.December2020MavenBuild.RadioButton1"/>
