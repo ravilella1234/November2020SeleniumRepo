@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ 
+ <groups>
+ 	<run>
+ 		<include name="regression"></include>
+ 	</run>
+ </groups>
+ 
+ <listeners>
+ 	<listener class-name="listners.TestNgListner"></listener>
+ 	<listener class-name="listners.RetryListener"></listener>
+ </listeners>
+
+  <test thread-count="5" name="Test">
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.project.December2020MavenBuild.TNG_002"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

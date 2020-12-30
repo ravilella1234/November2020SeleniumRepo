@@ -1,25 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[Test Started Running :amazon]]>
+    </line>
+    <line>
+      <![CDATA[<a href='D:\AprilWorkSpace\December2020MavenBuild//success//Wed_Dec_30_07_57_33_IST_2020.png'> <img src='D:\AprilWorkSpace\December2020MavenBuild//success//Wed_Dec_30_07_57_33_IST_2020.png' height='100' width='100'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[Test has Success:amazon]]>
+    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="2125" started-at="2020-12-29T02:10:07Z" finished-at="2020-12-29T02:10:09Z">
+  <suite name="Suite" duration-ms="63090" started-at="2020-12-30T02:27:34Z" finished-at="2020-12-30T02:28:37Z">
     <groups>
+      <group name="regression">
+        <method signature="TNG_002.amazon()[pri:0, instance:com.project.December2020MavenBuild.TNG_002@2aa3cd93]" name="amazon" class="com.project.December2020MavenBuild.TNG_002"/>
+      </group> <!-- regression -->
+      <group name="sanity">
+        <method signature="TNG_002.amazon()[pri:0, instance:com.project.December2020MavenBuild.TNG_002@2aa3cd93]" name="amazon" class="com.project.December2020MavenBuild.TNG_002"/>
+      </group> <!-- sanity -->
     </groups>
-    <test name="TestA2" duration-ms="2125" started-at="2020-12-29T02:10:07Z" finished-at="2020-12-29T02:10:09Z">
-      <class name="suiteA.TestA2">
-        <test-method status="PASS" signature="f()[pri:0, instance:suiteA.TestA2@3c153a1]" name="f" duration-ms="2039" started-at="2020-12-29T02:10:07Z" finished-at="2020-12-29T02:10:09Z">
+    <test name="Test" duration-ms="63090" started-at="2020-12-30T02:27:34Z" finished-at="2020-12-30T02:28:37Z">
+      <class name="com.project.December2020MavenBuild.TNG_002">
+        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:com.project.December2020MavenBuild.TNG_002@2aa3cd93]" name="startProcess" is-config="true" duration-ms="16933" started-at="2020-12-30T02:27:34Z" finished-at="2020-12-30T02:27:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- suiteA.TestA2 -->
-    </test> <!-- TestA2 -->
-    <test name="TestA1" duration-ms="2122" started-at="2020-12-29T02:10:07Z" finished-at="2020-12-29T02:10:09Z">
-      <class name="suiteA.TestA1">
-        <test-method status="PASS" signature="f()[pri:0, instance:suiteA.TestA1@17c386de]" name="f" duration-ms="2039" started-at="2020-12-29T02:10:07Z" finished-at="2020-12-29T02:10:09Z">
+        </test-method> <!-- startProcess -->
+        <test-method status="PASS" signature="amazon()[pri:0, instance:com.project.December2020MavenBuild.TNG_002@2aa3cd93]" name="amazon" duration-ms="24392" started-at="2020-12-30T02:27:51Z" finished-at="2020-12-30T02:28:15Z">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Started Running :amazon]]>
+            </line>
+            <line>
+              <![CDATA[<a href='D:\AprilWorkSpace\December2020MavenBuild//success//Wed_Dec_30_07_57_33_IST_2020.png'> <img src='D:\AprilWorkSpace\December2020MavenBuild//success//Wed_Dec_30_07_57_33_IST_2020.png' height='100' width='100'/> </a>]]>
+            </line>
+            <line>
+              <![CDATA[Test has Success:amazon]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- amazon -->
+        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.project.December2020MavenBuild.TNG_002@2aa3cd93]" name="endProcess" is-config="true" duration-ms="4314" started-at="2020-12-30T02:28:32Z" finished-at="2020-12-30T02:28:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- suiteA.TestA1 -->
-    </test> <!-- TestA1 -->
+        </test-method> <!-- endProcess -->
+      </class> <!-- com.project.December2020MavenBuild.TNG_002 -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
