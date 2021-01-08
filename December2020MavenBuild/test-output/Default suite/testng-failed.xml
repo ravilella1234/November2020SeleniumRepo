@@ -3,14 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.project.December2020MavenBuild.TestDependencies">
+      <class name="dataDriven.DataReadingByHashTable">
         <methods>
-          <include name="blue"/>
-          <include name="white"/>
-          <include name="green"/>
-          <include name="orange"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- com.project.December2020MavenBuild.TestDependencies -->
+      </class> <!-- dataDriven.DataReadingByHashTable -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

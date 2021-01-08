@@ -1,56 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
-    <line>
-      <![CDATA[Test Started Running :amazon]]>
-    </line>
-    <line>
-      <![CDATA[<a href='D:\AprilWorkSpace\December2020MavenBuild//success//Wed_Dec_30_07_57_33_IST_2020.png'> <img src='D:\AprilWorkSpace\December2020MavenBuild//success//Wed_Dec_30_07_57_33_IST_2020.png' height='100' width='100'/> </a>]]>
-    </line>
-    <line>
-      <![CDATA[Test has Success:amazon]]>
-    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="63090" started-at="2020-12-30T02:27:34Z" finished-at="2020-12-30T02:28:37Z">
+  <suite name="Default suite" duration-ms="1935" started-at="2021-01-08T02:20:19Z" finished-at="2021-01-08T02:20:21Z">
     <groups>
-      <group name="regression">
-        <method signature="TNG_002.amazon()[pri:0, instance:com.project.December2020MavenBuild.TNG_002@2aa3cd93]" name="amazon" class="com.project.December2020MavenBuild.TNG_002"/>
-      </group> <!-- regression -->
-      <group name="sanity">
-        <method signature="TNG_002.amazon()[pri:0, instance:com.project.December2020MavenBuild.TNG_002@2aa3cd93]" name="amazon" class="com.project.December2020MavenBuild.TNG_002"/>
-      </group> <!-- sanity -->
     </groups>
-    <test name="Test" duration-ms="63090" started-at="2020-12-30T02:27:34Z" finished-at="2020-12-30T02:28:37Z">
-      <class name="com.project.December2020MavenBuild.TNG_002">
-        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:com.project.December2020MavenBuild.TNG_002@2aa3cd93]" name="startProcess" is-config="true" duration-ms="16933" started-at="2020-12-30T02:27:34Z" finished-at="2020-12-30T02:27:51Z">
+    <test name="Default test" duration-ms="1935" started-at="2021-01-08T02:20:19Z" finished-at="2021-01-08T02:20:21Z">
+      <class name="dataDriven.DataReadingByHashTable">
+        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:dataDriven.DataReadingByHashTable@4b168fa9]" name="f" duration-ms="34" started-at="2021-01-08T02:20:21Z" data-provider="getData" finished-at="2021-01-08T02:20:21Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[{ExpectedResult=loginSuccess, RunMode=N, Pasword=zoho2015, UserName=ravilella.2015@gmail.com, Browser=chrome}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startProcess -->
-        <test-method status="PASS" signature="amazon()[pri:0, instance:com.project.December2020MavenBuild.TNG_002@2aa3cd93]" name="amazon" duration-ms="24392" started-at="2020-12-30T02:27:51Z" finished-at="2020-12-30T02:28:15Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Test Started Running :amazon]]>
-            </line>
-            <line>
-              <![CDATA[<a href='D:\AprilWorkSpace\December2020MavenBuild//success//Wed_Dec_30_07_57_33_IST_2020.png'> <img src='D:\AprilWorkSpace\December2020MavenBuild//success//Wed_Dec_30_07_57_33_IST_2020.png' height='100' width='100'/> </a>]]>
-            </line>
-            <line>
-              <![CDATA[Test has Success:amazon]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- amazon -->
-        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.project.December2020MavenBuild.TNG_002@2aa3cd93]" name="endProcess" is-config="true" duration-ms="4314" started-at="2020-12-30T02:28:32Z" finished-at="2020-12-30T02:28:37Z">
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:dataDriven.DataReadingByHashTable@4b168fa9]" name="f" duration-ms="7" started-at="2021-01-08T02:20:21Z" data-provider="getData" finished-at="2021-01-08T02:20:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{ExpectedResult=loginSuccess, RunMode=Y, Pasword=P1, UserName=U1, Browser=firefox}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- endProcess -->
-      </class> <!-- com.project.December2020MavenBuild.TNG_002 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- f -->
+      </class> <!-- dataDriven.DataReadingByHashTable -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
