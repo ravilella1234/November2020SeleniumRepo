@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="listners.TestNgListner"/>
-    <listener class-name="listners.RetryListener"/>
-  </listeners>
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
-    <groups>
-      <run>
-        <include name="regression"/>
-      </run>
-    </groups>
     <classes>
-      <class name="com.project.December2020MavenBuild.TNG_002">
+      <class name="pageobjectmodel.POM_001">
         <methods>
-          <include name="startProcess"/>
-          <include name="amazon"/>
           <include name="endProcess"/>
+          <include name="login"/>
+          <include name="startProcess"/>
         </methods>
-      </class> <!-- com.project.December2020MavenBuild.TNG_002 -->
+      </class> <!-- pageobjectmodel.POM_001 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

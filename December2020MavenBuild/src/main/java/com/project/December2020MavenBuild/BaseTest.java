@@ -189,4 +189,9 @@ public class BaseTest
 		
 	}
 	
+	public static void browserClose()
+	{
+		driver.quit();
+	}
+	
 }

@@ -1,35 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1935" started-at="2021-01-08T02:20:19Z" finished-at="2021-01-08T02:20:21Z">
+  <suite name="Suite" duration-ms="21139" started-at="2021-01-19T02:24:24Z" finished-at="2021-01-19T02:24:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1935" started-at="2021-01-08T02:20:19Z" finished-at="2021-01-08T02:20:21Z">
-      <class name="dataDriven.DataReadingByHashTable">
-        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:dataDriven.DataReadingByHashTable@4b168fa9]" name="f" duration-ms="34" started-at="2021-01-08T02:20:21Z" data-provider="getData" finished-at="2021-01-08T02:20:21Z">
+    <test name="Test" duration-ms="21139" started-at="2021-01-19T02:24:24Z" finished-at="2021-01-19T02:24:45Z">
+      <class name="pageobjectmodel.POM_001">
+        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:pageobjectmodel.POM_001@3e3047e6]" name="startProcess" is-config="true" duration-ms="9692" started-at="2021-01-19T02:24:24Z" finished-at="2021-01-19T02:24:34Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{ExpectedResult=loginSuccess, RunMode=N, Pasword=zoho2015, UserName=ravilella.2015@gmail.com, Browser=chrome}]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:dataDriven.DataReadingByHashTable@4b168fa9]" name="f" duration-ms="7" started-at="2021-01-08T02:20:21Z" data-provider="getData" finished-at="2021-01-08T02:20:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{ExpectedResult=loginSuccess, RunMode=Y, Pasword=P1, UserName=U1, Browser=firefox}]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- startProcess -->
+        <test-method status="PASS" signature="login()[pri:0, instance:pageobjectmodel.POM_001@3e3047e6]" name="login" duration-ms="5286" started-at="2021-01-19T02:24:34Z" finished-at="2021-01-19T02:24:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- dataDriven.DataReadingByHashTable -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="endProcess()[pri:0, instance:pageobjectmodel.POM_001@3e3047e6]" name="endProcess" is-config="true" duration-ms="6077" started-at="2021-01-19T02:24:39Z" finished-at="2021-01-19T02:24:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endProcess -->
+      </class> <!-- pageobjectmodel.POM_001 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

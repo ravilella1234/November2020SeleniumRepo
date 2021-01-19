@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test thread-count="5" name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="dataDriven.DataReadingByHashTable">
+      <class name="pageobjectmodel.POM_001">
         <methods>
-          <include name="f"/>
+          <include name="endProcess"/>
+          <include name="login"/>
+          <include name="startProcess"/>
         </methods>
-      </class> <!-- dataDriven.DataReadingByHashTable -->
+      </class> <!-- pageobjectmodel.POM_001 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
