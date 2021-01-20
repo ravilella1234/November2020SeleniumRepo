@@ -12,6 +12,7 @@ import org.testng.annotations.AfterMethod;
 public class POM_001 extends BaseTest
 {
 	Login obj;
+	CustomerRegistrationPage reg;
 	
   @BeforeMethod
   @Parameters("browser")
@@ -22,18 +23,25 @@ public class POM_001 extends BaseTest
 	  navigateUrl("automationurl");
   }
   
-  @Test
+  @Test(enabled = false)
   public void login() 
   {
 	  obj = new Login(driver);
 	  obj.customerLogin();
 	  Assert.assertEquals(obj.customerVerification(), "Authentication failed.");
   }
+  
+  @Test
+  public void registration() throws Exception
+  {
+	  reg = new CustomerRegistrationPage(driver);
+	  reg.customerRegistration();
+  }
 
   @AfterMethod
   public void endProcess()
   {
-	  browserClose();
+	  //browserClose();
   }
 
 }

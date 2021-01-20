@@ -6,8 +6,8 @@
     <classes>
       <class name="pageobjectmodel.POM_001">
         <methods>
+          <include name="registration"/>
           <include name="endProcess"/>
-          <include name="login"/>
           <include name="startProcess"/>
         </methods>
       </class> <!-- pageobjectmodel.POM_001 -->

@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.util.Date;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
@@ -19,6 +20,8 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.ProfilesIni;
 import org.openqa.selenium.io.FileHandler;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -97,6 +100,10 @@ public class BaseTest
 			
 			driver = new FirefoxDriver(option);
 		}
+		
+		driver.manage().window().maximize();
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		//driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	}
 
 	public static void navigateUrl(String url)
@@ -192,6 +199,22 @@ public class BaseTest
 	public static void browserClose()
 	{
 		driver.quit();
+	}
+	
+	public static void waitForElement(int timeInSeconds, WebElement element, String operationType)
+	{
+		WebDriverWait wait = new WebDriverWait(driver, timeInSeconds);
+		
+		if(operationType.equals("visible"))
+		{
+			wait.until(ExpectedConditions.visibilityOf(element));
+		}
+		else if(operationType.equals("clickable")) 
+		{
+			wait.until(ExpectedConditions.elementToBeClickable(element));
+		}
+		
+		
 	}
 	
 }
