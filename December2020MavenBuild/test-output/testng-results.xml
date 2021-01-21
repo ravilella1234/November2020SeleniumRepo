@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="17176" started-at="2021-01-20T02:30:56Z" finished-at="2021-01-20T02:31:13Z">
+  <suite name="Suite" duration-ms="47846" started-at="2021-01-21T02:19:20Z" finished-at="2021-01-21T02:20:08Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="17176" started-at="2021-01-20T02:30:56Z" finished-at="2021-01-20T02:31:13Z">
+    <test name="Test" duration-ms="47846" started-at="2021-01-21T02:19:20Z" finished-at="2021-01-21T02:20:08Z">
       <class name="pageobjectmodel.POM_001">
-        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:pageobjectmodel.POM_001@3e3047e6]" name="startProcess" is-config="true" duration-ms="9922" started-at="2021-01-20T02:30:56Z" finished-at="2021-01-20T02:31:06Z">
+        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:pageobjectmodel.POM_001@3e3047e6]" name="startProcess" is-config="true" duration-ms="23468" started-at="2021-01-21T02:19:21Z" finished-at="2021-01-21T02:19:44Z">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startProcess -->
-        <test-method status="PASS" signature="registration()[pri:0, instance:pageobjectmodel.POM_001@3e3047e6]" name="registration" duration-ms="7189" started-at="2021-01-20T02:31:06Z" finished-at="2021-01-20T02:31:13Z">
+        <test-method status="PASS" signature="registration()[pri:0, instance:pageobjectmodel.POM_001@3e3047e6]" name="registration" duration-ms="24294" started-at="2021-01-21T02:19:44Z" finished-at="2021-01-21T02:20:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registration -->
-        <test-method status="PASS" signature="endProcess()[pri:0, instance:pageobjectmodel.POM_001@3e3047e6]" name="endProcess" is-config="true" duration-ms="0" started-at="2021-01-20T02:31:13Z" finished-at="2021-01-20T02:31:13Z">
+        <test-method status="PASS" signature="endProcess()[pri:0, instance:pageobjectmodel.POM_001@3e3047e6]" name="endProcess" is-config="true" duration-ms="1" started-at="2021-01-21T02:20:08Z" finished-at="2021-01-21T02:20:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endProcess -->
