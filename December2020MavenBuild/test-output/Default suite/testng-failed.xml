@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pageobjectmodel.POM_001">
+      <class name="switches.FileUpload">
         <methods>
-          <include name="endProcess"/>
-          <include name="login"/>
-          <include name="startProcess"/>
+          <include name="fileupload"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- pageobjectmodel.POM_001 -->
+      </class> <!-- switches.FileUpload -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
