@@ -3,7 +3,10 @@ package com.crm.SalesforceCRM.BaseClass;
 import java.io.FileInputStream;
 import java.util.Properties;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+
+import com.crm.SalesforceCRM.Driver.utils.ExcelAPI;
 
 public class BaseTest 
 {
@@ -13,8 +16,9 @@ public class BaseTest
 	public static Properties data;
 	public static Properties mainProp;
 	public static Properties childProp;
+	public static ExcelAPI xls;
 	
-	public static void init() throws Exception
+	public void init() throws Exception
 	{
 		fis = new FileInputStream(projectPath+"//DataSources//commondata.properties");
 		data = new Properties();
@@ -31,6 +35,18 @@ public class BaseTest
 		childProp.load(fis);
 		String weburl = childProp.getProperty("zohourl");
 		System.out.println(weburl);
+			
+		//How do i come to know the suite?
+		String[] pack = this.getClass().getPackage().getName().split("\\.");
+		String suiteName = pack[pack.length-1];
+		System.out.println(suiteName);
+		
+		//init the XLS Files
+		xls = new ExcelAPI(childProp.getProperty(suiteName+"_xls"));
+		
+		//init testName
+		String testName = this.getClass().getSimpleName();
+		System.out.println(testName);
 	}
 	
 	
@@ -41,6 +57,11 @@ public class BaseTest
 	  init();
 	}
 	
+	 @AfterMethod
+	  public void End() 
+	  {
+		  System.out.println("iam afterMethod");
+	  }
 	
 
 }

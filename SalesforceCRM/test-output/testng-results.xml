@@ -2,24 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="109" started-at="2021-03-04T01:56:49Z" finished-at="2021-03-04T01:56:50Z">
+  <suite name="Default suite" duration-ms="1626" started-at="2021-03-05T02:14:48Z" finished-at="2021-03-05T02:14:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="109" started-at="2021-03-04T01:56:49Z" finished-at="2021-03-04T01:56:50Z">
-      <class name="com.crm.SalesforceCRM.suitea.LoginTest">
-        <test-method status="PASS" signature="startUp()[pri:0, instance:com.crm.SalesforceCRM.suitea.LoginTest@3a079870]" name="startUp" is-config="true" duration-ms="20" started-at="2021-03-04T01:56:49Z" finished-at="2021-03-04T01:56:49Z">
+    <test name="Default test" duration-ms="1626" started-at="2021-03-05T02:14:48Z" finished-at="2021-03-05T02:14:49Z">
+      <class name="com.crm.SalesforceCRM.suiteb.DemoClass">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:com.crm.SalesforceCRM.suiteb.DemoClass@f2f2cc1]" name="startUp" is-config="true" duration-ms="1546" started-at="2021-03-05T02:14:48Z" finished-at="2021-03-05T02:14:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="f()[pri:0, instance:com.crm.SalesforceCRM.suitea.LoginTest@3a079870]" name="f" duration-ms="14" started-at="2021-03-04T01:56:49Z" finished-at="2021-03-04T01:56:50Z">
+        <test-method status="PASS" signature="f()[pri:0, instance:com.crm.SalesforceCRM.suiteb.DemoClass@f2f2cc1]" name="f" duration-ms="11" started-at="2021-03-05T02:14:49Z" finished-at="2021-03-05T02:14:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="End()[pri:0, instance:com.crm.SalesforceCRM.suitea.LoginTest@3a079870]" name="End" is-config="true" duration-ms="3" started-at="2021-03-04T01:56:50Z" finished-at="2021-03-04T01:56:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- End -->
-      </class> <!-- com.crm.SalesforceCRM.suitea.LoginTest -->
+      </class> <!-- com.crm.SalesforceCRM.suiteb.DemoClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
