@@ -3,10 +3,11 @@ package com.crm.SalesforceCRM.BaseClass;
 import java.io.FileInputStream;
 import java.util.Properties;
 
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
-import com.crm.SalesforceCRM.Driver.utils.ExcelAPI;
+import com.crm.SalesforceCRM.driverclass.DriverScript;
+import com.crm.SalesforceCRM.utils.ExcelAPI;
 
 public class BaseTest 
 {
@@ -17,6 +18,9 @@ public class BaseTest
 	public static Properties mainProp;
 	public static Properties childProp;
 	public static ExcelAPI xls;
+	public static String testName ;
+	public static String sheetName;
+	public DriverScript ds=null;
 	
 	public void init() throws Exception
 	{
@@ -41,26 +45,28 @@ public class BaseTest
 		String suiteName = pack[pack.length-1];
 		System.out.println(suiteName);
 		
-		//init the XLS Files
-		xls = new ExcelAPI(childProp.getProperty(suiteName+"_xls"));
-		
 		//init testName
-		String testName = this.getClass().getSimpleName();
+		testName = this.getClass().getSimpleName();
 		System.out.println(testName);
+		
+		//init the XLS Files
+		xls = new ExcelAPI(childProp.getProperty(suiteName+"_xls"));	
+		
+		ds = new DriverScript();
 	}
 	
 	
-	@BeforeMethod
+	@BeforeTest
 	public void startUp() throws Exception
 	{
-	  System.out.println("iam beforeMethod");
+	  System.out.println("iam beforeTest");
 	  init();
 	}
 	
-	 @AfterMethod
+	 @AfterTest
 	  public void End() 
 	  {
-		  System.out.println("iam afterMethod");
+		  System.out.println("iam afterTest");
 	  }
 	
 
