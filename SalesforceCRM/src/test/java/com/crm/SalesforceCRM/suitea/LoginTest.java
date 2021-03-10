@@ -7,6 +7,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.crm.SalesforceCRM.BaseClass.BaseTest;
+import com.crm.SalesforceCRM.utils.Constants;
 import com.crm.SalesforceCRM.utils.DataUtils;
 
 public class LoginTest extends BaseTest
@@ -15,9 +16,8 @@ public class LoginTest extends BaseTest
   @Test(dataProvider = "getData")
   public void f(Hashtable<String, String> td) 
   {
-	  if(td.get("RunMode").equals("N"))
-		  throw new SkipException("Runmode is set as No...");
-	  
+	  if(td.get(Constants.RUNMODE_COL.equals(Constants.RUNMODE_NO)) != null)
+		  throw new SkipException("Runmode is set as No...");  
 	  System.out.println("iam f Method");
 	  ds.executeKeywords(xls, testName, td);
   }

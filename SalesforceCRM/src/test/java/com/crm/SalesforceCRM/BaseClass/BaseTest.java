@@ -17,6 +17,7 @@ public class BaseTest
 	public static Properties data;
 	public static Properties mainProp;
 	public static Properties childProp;
+	public  Properties orProp;
 	public static ExcelAPI xls;
 	public static String testName ;
 	public static String sheetName;
@@ -39,6 +40,10 @@ public class BaseTest
 		childProp.load(fis);
 		String weburl = childProp.getProperty("zohourl");
 		System.out.println(weburl);
+		
+		fis = new FileInputStream(projectPath+"//DataSources//or.properties");
+		orProp = new Properties();
+		orProp.load(fis);
 			
 		//How do i come to know the suite?
 		String[] pack = this.getClass().getPackage().getName().split("\\.");
@@ -53,6 +58,7 @@ public class BaseTest
 		xls = new ExcelAPI(childProp.getProperty(suiteName+"_xls"));	
 		
 		ds = new DriverScript();
+		ds.setOrProp(orProp);
 	}
 	
 	
