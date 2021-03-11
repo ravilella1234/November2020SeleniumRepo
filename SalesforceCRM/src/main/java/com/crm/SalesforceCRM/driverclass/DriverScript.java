@@ -1,5 +1,6 @@
 package com.crm.SalesforceCRM.driverclass;
 
+import java.lang.reflect.Method;
 import java.util.Hashtable;
 import java.util.Properties;
 
@@ -21,12 +22,15 @@ public class DriverScript
 		DriverScript.orProp = orProp;
 	}
 
-	public void executeKeywords(ExcelAPI xls,String testName,Hashtable<String, String> td)
+	public void executeKeywords(ExcelAPI xls,String testName,Hashtable<String, String> td) throws Exception, Exception
 	{
 		int rows = xls.getRowCount(Constants.KEYWORDS_SHEET);
 		System.out.println("Rows :" + rows);
 		
 		app = new ApplicationKeywords();
+		app.setOrProp(orProp);
+		app.setTd(td);
+		
 		
 		for(int rNum=1;rNum<rows;rNum++)
 		{
@@ -38,18 +42,24 @@ public class DriverScript
 				String dataKey = xls.getCellData(Constants.KEYWORDS_SHEET, Constants.TESTDATA_COL, rNum);
 				String tData = td.get(dataKey);
 				
-				System.out.println(tcid + "----"+ kWord + "----" + orProp.getProperty(objectKey) + "----" + tData);
+				//System.out.println(tcid + "----"+ kWord + "----" + orProp.getProperty(objectKey) + "----" + tData);
 				
-				if(kWord.equals("openBrowser"))
-					app.openBrowser();
-				else if(kWord.equals("navigateUrl"))
-					app.navigateUrl();
-				else if(kWord.equals("clickElement"))
-					app.clickElement();
-				else if(kWord.equals("typeText"))
-					app.typeText();
-				else if(kWord.equals("validateLogin"))
-					app.validateLogin();
+				app.setObjectKey(objectKey);
+				app.setDataKey(dataKey);
+				
+				/*
+				 * if(kWord.equals("openBrowser")) app.openBrowser(); else
+				 * if(kWord.equals("navigateUrl")) app.navigateUrl(); else
+				 * if(kWord.equals("clickElement")) app.clickElement(); else
+				 * if(kWord.equals("typeText")) app.typeText(); else
+				 * if(kWord.equals("validateLogin")) app.validateLogin(); else
+				 * if(kWord.equals("verifyTitle")) app.verifyTitle();
+				 */
+				
+				//Reflections
+				Method m;
+				m = app.getClass().getMethod(kWord);
+				m.invoke(app);
 				
 			}
 			

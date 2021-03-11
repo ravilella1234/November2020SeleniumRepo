@@ -9,7 +9,7 @@ public class Constants
 	public static final String OBJECT_COL = "Object";
 	public static final String TESTDATA_COL = "TestData";
 	public static final String RUNMODE_COL = "RunMode";
-	public static final  Object RUNMODE_NO = "N";
-	public static final Object RUNMODE_YES = "Y";
+	public static final String RUNMODE_NO = "N";
+	public static final String RUNMODE_YES = "Y";
 
 }

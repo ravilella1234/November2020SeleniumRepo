@@ -1,39 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="1" failed="0" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1793" started-at="2021-03-10T02:36:52Z" finished-at="2021-03-10T02:36:54Z">
+  <suite name="Default suite" duration-ms="17523" started-at="2021-03-11T02:36:09Z" finished-at="2021-03-11T02:36:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1793" started-at="2021-03-10T02:36:52Z" finished-at="2021-03-10T02:36:54Z">
+    <test name="Default test" duration-ms="17523" started-at="2021-03-11T02:36:09Z" finished-at="2021-03-11T02:36:26Z">
       <class name="com.crm.SalesforceCRM.suitea.LoginTest">
-        <test-method status="PASS" signature="startUp()[pri:0, instance:com.crm.SalesforceCRM.suitea.LoginTest@5ad851c9]" name="startUp" is-config="true" duration-ms="1600" started-at="2021-03-10T02:36:52Z" finished-at="2021-03-10T02:36:53Z">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:com.crm.SalesforceCRM.suitea.LoginTest@5ad851c9]" name="startUp" is-config="true" duration-ms="1571" started-at="2021-03-11T02:36:09Z" finished-at="2021-03-11T02:36:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:com.crm.SalesforceCRM.suitea.LoginTest@5ad851c9]" name="f" duration-ms="55" started-at="2021-03-10T02:36:53Z" data-provider="getData" finished-at="2021-03-10T02:36:53Z">
+        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:com.crm.SalesforceCRM.suitea.LoginTest@5ad851c9]" name="f" duration-ms="15841" started-at="2021-03-11T02:36:10Z" data-provider="getData" finished-at="2021-03-11T02:36:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Expected Results=loginSuccuss, RunMode=Y, Password=zoho2015, UserName=ravilella.2015@gmail.com, Browser=chrome}]]>
+                <![CDATA[{Expected Results=loginSuccuss, RunMode=Y, Password=zoho2015, UserName=ravilella.2015@gmail.com, Url=https://www.zoho.com/, Browser=chrome}]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:com.crm.SalesforceCRM.suitea.LoginTest@5ad851c9]" name="f" duration-ms="32" started-at="2021-03-10T02:36:53Z" data-provider="getData" finished-at="2021-03-10T02:36:54Z">
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.crm.SalesforceCRM.suitea.LoginTest@5ad851c9]" name="f" duration-ms="3" started-at="2021-03-11T02:36:26Z" data-provider="getData" finished-at="2021-03-11T02:36:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{Expected Results=loginSuccuss, RunMode=N, Password=P1, UserName=U1, Browser=firefox}]]>
+                <![CDATA[{Expected Results=loginSuccuss, RunMode=N, Password=P1, UserName=U1, Url=, Browser=firefox}]]>
               </value>
             </param>
           </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Runmode is set as No...]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Runmode is set as No...
+at com.crm.SalesforceCRM.suitea.LoginTest.f(LoginTest.java:20)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="End()[pri:0, instance:com.crm.SalesforceCRM.suitea.LoginTest@5ad851c9]" name="End" is-config="true" duration-ms="1" started-at="2021-03-10T02:36:54Z" finished-at="2021-03-10T02:36:54Z">
+        <test-method status="PASS" signature="End()[pri:0, instance:com.crm.SalesforceCRM.suitea.LoginTest@5ad851c9]" name="End" is-config="true" duration-ms="0" started-at="2021-03-11T02:36:26Z" finished-at="2021-03-11T02:36:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- End -->
