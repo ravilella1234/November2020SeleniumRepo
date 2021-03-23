@@ -4,7 +4,9 @@ import java.util.Hashtable;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
@@ -39,12 +41,40 @@ public class GenericKeywords
 	public void typeText() 
 	{
 		System.out.println("Type Text ...  " + orProp.getProperty(objectKey) +"---"+ td.get(dataKey));
+		//driver.findElement(By.xpath(orProp.getProperty(objectKey))).sendKeys(td.get(dataKey));
+		getObject(objectKey).sendKeys(td.get(dataKey));
 	}
 
-	public void clickElement() 
+	public void clickElement() throws Exception 
 	{
 		System.out.println("Clicked on Element..." +orProp.getProperty(objectKey));
+		//driver.findElement(By.xpath(orProp.getProperty(objectKey))).click();
+		getObject(objectKey).click();
 	}
+	
+	public WebElement getObject(String objectKey)
+	{
+		WebElement element = null;
+		
+		if(objectKey.endsWith("_id")) {
+			element = driver.findElement(By.id(orProp.getProperty(objectKey)));
+		}else if(objectKey.endsWith("_name")) {
+			element = driver.findElement(By.name(orProp.getProperty(objectKey)));
+		}else if(objectKey.endsWith("_classname")) {
+			element = driver.findElement(By.className(orProp.getProperty(objectKey)));
+		}else if(objectKey.endsWith("_xpath")) {
+			element = driver.findElement(By.xpath(orProp.getProperty(objectKey)));
+		}else if(objectKey.endsWith("_css")) {
+			element = driver.findElement(By.cssSelector(orProp.getProperty(objectKey)));
+		}else if(objectKey.endsWith("_linktext")) {
+			element = driver.findElement(By.linkText(orProp.getProperty(objectKey)));
+		}else if(objectKey.endsWith("_partiallinktext")) {
+			element = driver.findElement(By.partialLinkText(orProp.getProperty(objectKey)));
+		}
+		
+		return element;
+	}
+	
 
 	public void navigateUrl() 
 	{
