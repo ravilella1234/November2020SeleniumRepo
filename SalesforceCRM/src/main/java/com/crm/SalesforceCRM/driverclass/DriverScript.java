@@ -21,6 +21,12 @@ public class DriverScript
 	public  void setOrProp(Properties orProp) {
 		DriverScript.orProp = orProp;
 	}
+	
+	public void quit()
+	{
+		if(app!=null)
+			app.quit();
+	}
 
 	public void executeKeywords(ExcelAPI xls,String testName,Hashtable<String, String> td) throws Exception, Exception
 	{

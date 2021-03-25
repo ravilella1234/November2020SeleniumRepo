@@ -2,16 +2,16 @@
 <testng-results skipped="1" failed="0" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17059" started-at="2021-03-23T02:14:31Z" finished-at="2021-03-23T02:14:48Z">
+  <suite name="Default suite" duration-ms="25689" started-at="2021-03-25T02:00:21Z" finished-at="2021-03-25T02:00:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17059" started-at="2021-03-23T02:14:31Z" finished-at="2021-03-23T02:14:48Z">
+    <test name="Default test" duration-ms="25689" started-at="2021-03-25T02:00:21Z" finished-at="2021-03-25T02:00:46Z">
       <class name="com.crm.SalesforceCRM.suitea.LoginTest">
-        <test-method status="PASS" signature="startUp()[pri:0, instance:com.crm.SalesforceCRM.suitea.LoginTest@5ad851c9]" name="startUp" is-config="true" duration-ms="1568" started-at="2021-03-23T02:14:31Z" finished-at="2021-03-23T02:14:32Z">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:com.crm.SalesforceCRM.suitea.LoginTest@5ad851c9]" name="startUp" is-config="true" duration-ms="2171" started-at="2021-03-25T02:00:21Z" finished-at="2021-03-25T02:00:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startUp -->
-        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:com.crm.SalesforceCRM.suitea.LoginTest@5ad851c9]" name="f" duration-ms="15389" started-at="2021-03-23T02:14:33Z" data-provider="getData" finished-at="2021-03-23T02:14:48Z">
+        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:com.crm.SalesforceCRM.suitea.LoginTest@5ad851c9]" name="f" duration-ms="21660" started-at="2021-03-25T02:00:23Z" data-provider="getData" finished-at="2021-03-25T02:00:45Z">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.crm.SalesforceCRM.suitea.LoginTest@5ad851c9]" name="f" duration-ms="3" started-at="2021-03-23T02:14:48Z" data-provider="getData" finished-at="2021-03-23T02:14:48Z">
+        <test-method status="SKIP" signature="f(java.util.Hashtable)[pri:0, instance:com.crm.SalesforceCRM.suitea.LoginTest@5ad851c9]" name="f" duration-ms="5" started-at="2021-03-25T02:00:45Z" data-provider="getData" finished-at="2021-03-25T02:00:45Z">
           <params>
             <param index="0">
               <value>
@@ -68,10 +68,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method status="PASS" signature="End()[pri:0, instance:com.crm.SalesforceCRM.suitea.LoginTest@5ad851c9]" name="End" is-config="true" duration-ms="0" started-at="2021-03-23T02:14:48Z" finished-at="2021-03-23T02:14:48Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.crm.SalesforceCRM.suitea.LoginTest@5ad851c9]" name="quit" is-config="true" duration-ms="1732" started-at="2021-03-25T02:00:45Z" finished-at="2021-03-25T02:00:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- End -->
+        </test-method> <!-- quit -->
       </class> <!-- com.crm.SalesforceCRM.suitea.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

@@ -70,9 +70,11 @@ public class BaseTest
 	}
 	
 	 @AfterTest
-	  public void End() 
+	  public void quit() 
 	  {
 		  System.out.println("iam afterTest");
+		  if(ds!=null)
+			  ds.quit();
 	  }
 	
 

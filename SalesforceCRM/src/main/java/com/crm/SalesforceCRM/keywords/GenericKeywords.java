@@ -36,8 +36,6 @@ public class GenericKeywords
 	}
 
 	
-	
-	
 	public void typeText() 
 	{
 		System.out.println("Type Text ...  " + orProp.getProperty(objectKey) +"---"+ td.get(dataKey));
@@ -104,6 +102,12 @@ public class GenericKeywords
 	public void verifyTitle()
 	{
 		System.out.println("title is verified.....");
+	}
+	
+	public void quit()
+	{
+		if(driver!=null)
+			driver.quit();
 	}
 
 }

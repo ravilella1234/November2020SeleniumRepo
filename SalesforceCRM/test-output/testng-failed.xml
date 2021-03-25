@@ -5,7 +5,7 @@
     <classes>
       <class name="com.crm.SalesforceCRM.suitea.LoginTest">
         <methods>
-          <include name="End"/>
+          <include name="quit"/>
           <include name="f" invocation-numbers="1"/>
           <include name="startUp"/>
         </methods>
